@@ -1,0 +1,61 @@
+#:kivy 1.0
+#:import win kivy.core.window
+
+<ImageButton>:
+    size_hint_x: None
+    size_hint_y: None
+    size: '50dp', '50dp'
+    # allow_stretch True scales source picture to image size
+    allow_stretch: True
+    #source: 'icons/btn_torch.png'
+    #size: '100dp', '100dp'
+    disabled_color: 1,1,1,.5
+
+
+<MeterList>:
+    name: 'meter_list'
+    #selected_meter: meter_select_btn
+    Label:
+        text: root.name
+        pos_hint: {'x': .1, 'y': .9}
+        font_size: '30sp'
+        size_hint: None, None
+        size: self.texture_size #'40dp', '40dp'
+
+    ImageButton:
+#        source: 'icons/next-1_inv.png'
+        #on_release: root.manager.current = 'meter_list'
+        on_release: root.take_picture()
+        pos_hint: {'x': .9, 'center_y': .9}
+
+<PictureCrop>:
+    name: 'picture_crop'
+    #selected_meter: meter_select_btn
+    Label:
+        text: root.name
+        pos_hint: {'x': .1, 'y': .9}
+        font_size: '30sp'
+        size_hint: None, None
+        size: self.texture_size #'40dp', '40dp'
+
+    ImageButton:
+#        source: 'icons/next-1_inv.png'
+        #on_release: root.manager.current = 'meter_list'
+        on_release: root.manager.current = 'read_meter'
+        pos_hint: {'x': .9, 'center_y': .9}
+
+<ReadMeter>:
+    name: 'read_meter'
+    #selected_meter: meter_select_btn
+    Label:
+        text: root.name
+        pos_hint: {'x': .1, 'y': .9}
+        font_size: '30sp'
+        size_hint: None, None
+        size: self.texture_size #'40dp', '40dp'
+
+    ImageButton:
+#        source: 'icons/next-1_inv.png'
+        #on_release: root.manager.current = 'meter_list'
+        on_release: root.manager.current = 'meter_list'
+        pos_hint: {'x': .9, 'center_y': .9}

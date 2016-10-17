@@ -87,3 +87,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+# kivy buildozer directory and bin/ directory where buildozer stores .apk
+.buildozer/
+bin/
