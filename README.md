@@ -15,5 +15,7 @@ E/dalvikvm( 2277): dlopen("/data/data/eu.ijbd.nmeter/files/lib/python2.7/lib-dyn
 Workarounds
 
 buildozer spec needs hostpython2 in requirements, without it buidozer android_new crashes
+
 requirements = kivy, hostpython2
+
 buildozer android (legacy pygame provider) works without hostpython2 I requirements
