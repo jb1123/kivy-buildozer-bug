@@ -90,3 +90,7 @@ ENV/
 # kivy buildozer directory and bin/ directory where buildozer stores .apk
 .buildozer/
 bin/
+# Pycharm configuration
+.idea/
+# Android application builds
+*.apk
