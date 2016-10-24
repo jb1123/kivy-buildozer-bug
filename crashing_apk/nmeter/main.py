@@ -4,9 +4,9 @@ from kivy.lang import Builder
 from kivy.uix.button import Button
 from kivy.uix.screenmanager import ScreenManager, Screen
 
-from nmeter.meterlist import MeterList
-from nmeter.picturecrop import PictureCrop
-from nmeter.readmeter import ReadMeter
+from meterlist import MeterList
+from picturecrop import PictureCrop
+from readmeter import ReadMeter
 
 
 class ImageButton(Button):
