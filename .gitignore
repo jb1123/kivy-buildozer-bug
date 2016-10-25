@@ -92,5 +92,5 @@ ENV/
 bin/
 # Pycharm configuration
 .idea/
-# Android application builds
+# Android builds
 *.apk
